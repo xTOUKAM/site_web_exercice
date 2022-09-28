@@ -1,0 +1,126 @@
+html {
+    font-family: sans-serif;
+    margin: auto;
+    padding: auto;
+}
+
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+}
+
+/* Pour enlever le style des points dans la balise ul */
+nav ul {
+    list-style-type: none;
+}
+
+/* Pour alligner le texte et le mettre à droite */
+nav ul li {
+    float: right;
+    width: 25%;
+    text-align: center;
+}
+
+/* Permettre au menu d'être au même endroit que le texte du header */
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px transparent;
+    padding: 0px 0px;
+}
+
+nav a::hover {
+    color: aquamarine;
+    border-bottom: 2px solid;
+}
+
+.en-dessous {
+    display: none;
+    box-shadow: 0px 1px 2px black;
+    background-color: #CCC;
+}
+
+nav > ul li:hover .en-dessous {
+    display: block;
+}
+
+.en-dessous li {
+    float: none;
+    width: 100%;
+    text-align: right;
+}
+
+.en-dessous a {
+    padding: 5px;
+    border-bottom: none;
+}
+
+.en-dessous a:hover {
+    border-bottom: none;
+    background-color: aquamarine;
+}
+
+.menu-deroulant {
+    content: "↓";
+    font-size: 12px;
+}
+
+.en-dessous {
+    display: none;
+    box-shadow: 0px 1px 2px black;
+    background-color: #ccc;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul li {
+    float: right;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+hr {
+    border-top: 1px dashed blue;
+    border-radius: 30px;
+}
+
+image {
+    border-top: #CCC solid;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: 100px solid;
+    padding: 100px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px transparent;
+}
